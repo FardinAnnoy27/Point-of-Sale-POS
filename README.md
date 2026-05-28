@@ -14,19 +14,19 @@ SmartPOS is a native Android application designed for retail shops, inventory ma
 
 The project follows a standard native Android architecture built using the modern Gradle build system. Here is the structural layout of the codebase:
 SmartPOS/
-├── app/                        # Main Application Module
-│   ├── libs/
-
-│   │   └── WoosimLib231.jar    # Woosim Mobile Printer SDK/Driver
-│   ├── release/
-
-│   │   └── app-release.apk     # Final compiled production package
-│   ├── build.gradle            # App-level module configuration & SDK targets
-│   └── proguard-rules.pro      # Code shrinking, optimization, and obfuscation rules
-├── gradle/                     # Gradle wrapper directory for build automation
-├── build.gradle                # Top-level build file configuring global dependencies (AGP v8.7.0)
-├── settings.gradle             # Defines root project name and includes app modules
-└── gradle.properties           # Project-wide JVM memory configuration & AndroidX settings
+```text
+SmartPOS/
+├── app/                             # Main Application Module[cite: 1]
+│   ├── libs/                        
+│   │   └── WoosimLib231.jar         # Woosim Mobile Printer SDK/Driver[cite: 1]
+│   ├── release/                     
+│   │   └── app-release.apk          # Final compiled production package[cite: 1]
+│   ├── build.gradle                 # App-level module configuration & SDK targets[cite: 1]
+│   └── proguard-rules.pro           # Code shrinking, optimization, and obfuscation rules[cite: 1]
+├── gradle/                          # Gradle wrapper directory for build automation[cite: 4, 5]
+├── build.gradle                     # Top-level build file configuring global dependencies (AGP v8.7.0)[cite: 2]
+├── settings.gradle                  # Defines root project name and includes app modules[cite: 6]
+└── gradle.properties                # Project-wide JVM memory configuration & AndroidX settings[cite: 3]
 
 ### Component Breakdown:
 1. **Hardware Integration Layer (`app/libs/`):** Houses the `WoosimLib231.jar` SDK, which manages low-level Bluetooth communication and print commands for physical thermal printers.
